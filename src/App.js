@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Stack, Button } from "react-bootstrap";
+import BudgetCard from "./Components/BudgetCard/BudgetCard";
 
 function App() {
   return (
@@ -9,9 +10,18 @@ function App() {
         <Button variant="primary">Add Budget</Button>
         <Button variant="outline-primary">Add Expense</Button>
       </Stack>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1rem", alignItems: "flex-start" }}>
-        test
-      </div>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+          gap: "1rem",
+          alignItems: "flex-start",
+        }}></div>
+      <BudgetCard
+        name="Entertainment"
+        amount={200}
+        max={1000}
+        backgroundColor={"gray"}></BudgetCard>
     </Container>
   );
 }
