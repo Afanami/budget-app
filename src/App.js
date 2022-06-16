@@ -71,12 +71,30 @@ function App() {
               />
             );
           })}
+        </div>
+        <div
+          style={{
+            display: "grid",
+            margin: "1rem 0 0 0",
+            gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+            gap: "1rem",
+            alignItems: "flex-start",
+          }}>
           <UncategorisedBudgetCard
             onAddExpenseClick={openAddExpenseModal}
             onViewExpensesClick={() => {
               setViewExpensesModalBudgetId(UNCATEGORISED_BUDGET_ID);
             }}
           />
+        </div>
+        <div
+          style={{
+            display: "grid",
+            margin: "1rem 0 0 0",
+            gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+            gap: "1rem",
+            alignItems: "flex-start",
+          }}>
           <TotalBudgetCard />
         </div>
       </Container>
