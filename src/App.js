@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Container, Stack, Button, Card } from "react-bootstrap";
-import AddBudgetModal from "./Components/AddBudgetModel/AddBudgetModal";
-import AddExpenseModal from "./Components/AddExpenseModal/AddExpenseModal";
-import BudgetCard from "./Components/BudgetCard/BudgetCard";
-import TotalBudgetCard from "./Components/TotalBudgetCard/TotalBudgetCard";
-import UncategorisedBudgetCard from "./Components/UncategorisedBudgetCard/UncategorisedBudgetCard";
-import ViewExpensesModal from "./Components/ViewExpensesModal/ViewExpensesModal";
+import AddBudgetModal from "./Components/AddBudgetModal";
+import AddExpenseModal from "./Components/AddExpenseModal";
+import BudgetCard from "./Components/BudgetCard";
+import TotalBudgetCard from "./Components/TotalBudgetCard";
+import UncategorisedBudgetCard from "./Components/UncategorisedBudgetCard";
+import ViewExpensesModal from "./Components/ViewExpensesModal";
 import { UNCATEGORISED_BUDGET_ID, useBudgets } from "./Contexts/BudgetsContext";
 
 function App() {

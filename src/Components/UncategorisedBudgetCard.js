@@ -2,8 +2,8 @@ import React from "react";
 import {
   UNCATEGORISED_BUDGET_ID,
   useBudgets,
-} from "../../Contexts/BudgetsContext";
-import BudgetCard from "../BudgetCard/BudgetCard";
+} from "../Contexts/BudgetsContext";
+import BudgetCard from "./BudgetCard";
 
 export default function UncategorisedBudgetCard(props) {
   const { getBudgetExpenses } = useBudgets();

@@ -3,7 +3,7 @@ import { Modal, Form, Button } from "react-bootstrap";
 import {
   UNCATEGORISED_BUDGET_ID,
   useBudgets,
-} from "../../Contexts/BudgetsContext";
+} from "../Contexts/BudgetsContext";
 
 export default function AddExpenseModal({
   show,

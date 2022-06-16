@@ -3,8 +3,8 @@ import { Modal, Button, Stack } from "react-bootstrap";
 import {
   UNCATEGORISED_BUDGET_ID,
   useBudgets,
-} from "../../Contexts/BudgetsContext";
-import { currencyFormatter } from "../../utils";
+} from "../Contexts/BudgetsContext";
+import { currencyFormatter } from "../utils";
 
 export default function ViewExpensesModal({ budgetId, handleClose }) {
   const {

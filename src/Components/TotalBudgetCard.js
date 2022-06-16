@@ -1,6 +1,6 @@
 import React from "react";
-import { useBudgets } from "../../Contexts/BudgetsContext";
-import BudgetCard from "../BudgetCard/BudgetCard";
+import { useBudgets } from "../Contexts/BudgetsContext";
+import BudgetCard from "./BudgetCard";
 
 export default function TotalBudgetCard(props) {
   const { expenses, budgets } = useBudgets();
